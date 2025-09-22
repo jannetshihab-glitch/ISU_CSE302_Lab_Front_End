@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alibaba Mini Prototype</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body { font-family: Arial,sans-serif; background-color:#f2f2f2; margin:0; padding-top:120px;}
+.alibaba-fixed-header { position:fixed; top:0; left:0; right:0; background:#fff; z-index:1040; box-shadow:0 1px 6px rgba(0,0,0,0.07);}
+.alibaba-fixed-row { position:fixed; top:60px; left:0; right:0; background:#fff; z-index:1039; padding:5px 0; min-width:1200px;}
+.navbar-brand { color:#0d6efd !important; font-weight:bold;}
+.btn-primary { background-color:#0d6efd; border-color:#0d6efd;}
+.btn-primary:hover { background-color:#0b5ed7; border-color:#0b5ed7;}
+.feature-box { width:280px; min-width:280px; background:#890606; color:#fff; padding:20px; border-radius:12px; flex-shrink:0; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
+.feature-box img { width:60px; height:60px; margin-bottom:10px;}
+.features-row { display:flex; gap:1rem; overflow-x:auto; padding:20px; border-radius:12px;}
+.product-card { background:#ebe9e9; border:1px solid #efe4e4; border-radius:8px; overflow:hidden; transition:0.3s;}
+.product-card img { width:100%; height:200px; object-fit:cover;}
+.product-card .card-body { padding:10px;}
+.product-card h5 { font-size:1rem; margin-bottom:5px;}
+.product-card p { font-size:0.9rem; margin-bottom:5px;}
+.round-btn { border-radius:50px; min-width:120px; height:40px; border:1px solid #0d6efd; background:transparent; color:#0d6efd; display:flex; align-items:center; justify-content:center;}
+.round-btn:hover { background:#0d6efd; color:#fff;}
+</style>
+</head>
+<body>
+
+<!-- FIXED HEADER -->
+<div class="alibaba-fixed-header">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-2 px-3">
+  <a class="navbar-brand" hreaf="#">Alibaba<span class="text-muted">.mini</span></a>
+  <div class="d-flex ms-auto gap-2">
+    <div class="hover-text d-flex align-items-center"><i class="bi bi-globe me-1"></i>English - BDT</div>
+    <div class="hover-text d-flex align-items-center"><i class="bi bi-person me-1"></i>Sign in</div>
+    <button class="btn btn-primary">Create account</button>
+  </div>
+</nav>
+<div class="alibaba-fixed-row">
+<div class="container d-flex justify-content-between px-3">
+  <div class="d-flex gap-3">
+    <span>All Categories</span>
+    <span>Featured Selections</span>
+    <span>Order Protection</span>
+  </div>
+  <div class="d-flex gap-3">
+    <span>AI Sourcing Agent</span>
+    <span>Buyer Central</span>
+    <span>Help Center</span>
+    <span>App & Extension</span>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- HERO -->
+<header class="container my-4 p-0">
+<div class="position-relative rounded shadow-sm" 
+     style="background-image: url('https://i.pinimg.com/736x/eb/67/64/eb6764023ea96a0f6214e83cc8beb344.jpg'); 
+            background-size:cover; background-position:center; height:400px; color:#eeebeb;">
+  <div style="background: rgba(0,0,0,0.4); padding:2rem; height:100%; display:flex; flex-direction:column; justify-content:center;">
+    <h2>The leading B2B ecommerce platform for global trade</h2>
+    <div class="position-relative mt-3" style="max-width:700px;">
+      <input type="text" class="form-control rounded-pill ps-3 pe-5" placeholder="Search products">
+      <i class="bi bi-camera-fill position-absolute" style="right:120px; top:50%; transform:translateY(-50%); color:#fff; font-size:1.2rem; cursor:pointer;"></i>
+      <button class="btn btn-primary rounded-pill position-absolute" style="right:0; top:50%; transform:translateY(-50%);"><i class="bi bi-search"></i> Search</button>
+    </div>
+    <div class="d-flex gap-2 mt-2 flex-wrap">
+      <span class="small">Frequently searched:</span>
+      <button class="btn btn-outline-light btn-sm">iPhones 15 Pro Max</button>
+      <button class="btn btn-outline-light btn-sm">MacBook</button>
+      <button class="btn btn-outline-light btn-sm">Watch</button>
+      <button class="btn btn-outline-light btn-sm">Women's Intimates</button>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- FEATURES ROW -->
+<div class="container my-5">
+  <div class="features-row">
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/5107/5107993.png" alt="icon1">
+      <h4>Millions of business offerings</h4>
+      <p>Explore products and suppliers worldwide.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/10435/10435158.png" alt="icon2">
+      <h4>Assured quality and transactions</h4>
+      <p>Verified suppliers and secure orders.</p>
+    </div>
+    <div class="feature-box">
+      <!-- Leading B2B with your Pinterest image -->
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/036/750/896/small_2x/b2b-icon-business-enterprise-sign-marketing-company-symbol-partnership-teamwork-logo-flat-style-vector.jpg" alt="Leading B2B">
+      <h4>Leading B2B</h4>
+      <p>Global trade and business opportunities</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://image.pngaaa.com/11/5178011-middle.png" alt="icon4">
+      <h4>Tailored trading experience</h4>
+      <p>Get exclusive benefits for your business.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BUTTON GRID ROW -->
+
+<div class="container my-5">
+  <div class="d-flex align-items-start gap-3 flex-wrap">
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-tv"></i> Electronics
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-phone"></i> Mobile Phones
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-laptop"></i> Computers & Laptops
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-tablet"></i> Tablets
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-camera"></i> Cameras
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-tv-fill"></i> Televisions
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-house"></i> Home Appliances
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-basket"></i> Kitchen Appliances
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-sofa"></i> Furniture
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-bag"></i> Clothing & Apparel
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-shoe-print"></i> Footwear
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-patch-plus"></i> Accessories
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-watch"></i> Watches
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-gem"></i> Jewelry
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-emoji-smile"></i> Beauty & Personal Care
+    </button>
+
+    <button class="round-btn d-flex align-items-center gap-2">
+      <i class="bi bi-heart-pulse"></i> Health & Wellness
+    </button>
+
+  </div>
+</div>
+
+<style>
+.round-btn {
+  border-radius: 50px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #353a43;
+  background-color: transparent;
+  color: #596a84;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.round-btn:hover {
+  background-color: #464b52;
+  color: #614949;
+  border-color: #32363d;
+}
+</style>
+
+<!-- PRODUCT GRID -->
+<main class="container mb-5">
+<div class="row g-3" id="productGrid"></div>
+</main>
+
+<footer class="bg-white border-top py-3">
+<div class="container d-flex justify-content-between">
+<small>© <span id="year"></span> Alibaba.mini — Prototype</small>
+<div class="small">About · Help · Terms</div>
+</div>
+</footer>
+
+<script>
+// Set year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Product list
+const products = [
+  {id:51,name:"iPhone 15",price:"$1099",img:"https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg?format=jpg&crop=923,692,x364,y0,safe&width=960",supplier:"Apple"},
+  {id:51,name:"iphone 17",price:"$899",img:"https://m-cdn.phonearena.com/images/hub/550-wide-two_1200/iPhone-17-Pro-Max-release-date-price-and-features.jpg",supplier:"Samsung"},
+  {id:51,name:"MacBook Pro",price:"$2399",img:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80",supplier:"Apple"}
+];
+
+// Render products
+const grid = document.getElementById("productGrid");
+products.forEach(p=>{
+  const col = document.createElement("div");
+  col.className="col-md-3 col-sm-6";
+  col.innerHTML=`<div class="product-card">
+      <img src="${p.img}" alt="${p.name}">
+      <div class="card-body">
+        <h5>${p.name}</h5>
+        <p>${p.price}</p>
+        <p class="text-muted">${p.supplier}</p>
+      </div>
+  </div>`;
+  grid.appendChild(col);
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
